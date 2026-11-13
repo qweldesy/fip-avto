@@ -20,17 +20,21 @@
         }
       });
     });
-    /* ширина ячейки = ширина самой широкой цифры этого шрифта (canvas-замер),
-       чтобы цифры и дефисы были строго одной ширины независимо от поддержки tabular-nums */
-    var cv = document.createElement('canvas').getContext('2d');
+    /* ширина ячейки = реальный advance самой широкой цифры этого же шрифта,
+       замеренный в DOM (canvas может выбрать другой шрифт и врать) */
     document.querySelectorAll('.phone, .m-phone').forEach(function (el) {
-      var cells = el.querySelectorAll('.ch');
+      var cells = Array.prototype.slice.call(el.querySelectorAll('.ch'));
       if (!cells.length) return;
-      var cs = getComputedStyle(el);
-      cv.font = cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
-      try { cv.fontVariantNumeric = 'tabular-nums'; } catch (e) {}
-      var w = Math.max(cv.measureText('0').width, cv.measureText('8').width, cv.measureText('4').width);
-      cells.forEach(function (b) { b.style.width = w.toFixed(2) + 'px'; });
+      var max = 0;
+      cells.forEach(function (b) {
+        if (!/[0-9]/.test(b.textContent)) return; // меряем только цифры
+        b.style.width = '';
+        var r = document.createRange();
+        r.selectNodeContents(b);
+        max = Math.max(max, r.getBoundingClientRect().width);
+      });
+      if (!max) return;
+      cells.forEach(function (b) { b.style.width = (Math.ceil(max * 100) / 100).toFixed(2) + 'px'; });
     });
   }
   phoneCells();
