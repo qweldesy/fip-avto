@@ -5,7 +5,7 @@
   'use strict';
 
   /* ---------- телефон: цифры и дефисы — ячейки одной ширины ---------- */
-  function phoneCells() {
+  function buildPhoneCells() {
     document.querySelectorAll('[data-phone]').forEach(function (el) {
       var src = el.getAttribute('data-phone');
       el.textContent = '';
@@ -20,9 +20,15 @@
         }
       });
     });
-    /* ширина ячейки = реальный advance самой широкой цифры этого же шрифта,
-       замеренный в DOM (canvas может выбрать другой шрифт и врать) */
+  }
+
+  /* ширина ячейки = реальный advance самой широкой цифры этого же шрифта,
+     замеренный в DOM (canvas может выбрать другой шрифт и врать).
+     Скрытые элементы дают 0 — поэтому выравнивание повторяется при
+     открытии меню и ресайзе */
+  function equalizePhoneCells() {
     document.querySelectorAll('.phone, .m-phone').forEach(function (el) {
+      if (el.offsetParent === null) return; // скрыт (в т.ч. внутри hidden-панели)
       var cells = Array.prototype.slice.call(el.querySelectorAll('.ch'));
       if (!cells.length) return;
       var max = 0;
@@ -34,10 +40,20 @@
         max = Math.max(max, r.getBoundingClientRect().width);
       });
       if (!max) return;
-      cells.forEach(function (b) { b.style.width = (Math.ceil(max * 100) / 100).toFixed(2) + 'px'; });
+      var w = (Math.ceil(max * 100) / 100).toFixed(2) + 'px';
+      cells.forEach(function (b) { b.style.width = w; });
     });
   }
-  phoneCells();
+
+  buildPhoneCells();
+  equalizePhoneCells();
+  window.addEventListener('load', equalizePhoneCells);
+  window.addEventListener('resize', debounce(equalizePhoneCells, 200));
+
+  function debounce(fn, ms) {
+    var t;
+    return function () { clearTimeout(t); t = setTimeout(fn, ms); };
+  }
 
   /* ---------- шапка: фон при скролле ---------- */
   var header = document.getElementById('header');
@@ -56,6 +72,7 @@
     burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
     if (open) {
       panel.hidden = false;
+      equalizePhoneCells(); // панель стала видимой — выровнять ячейки номера
       requestAnimationFrame(function () { panel.classList.add('open'); });
       document.body.style.overflow = 'hidden';
     } else {
