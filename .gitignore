@@ -1,0 +1,9 @@
+# dev-файлы (не публикуются)
+font-test.html
+mobile-stand*.html
+ref-pin.jpg
+
+# исходные фото (в сайт идут только оптимизированные img/web/*)
+img/photo*.jpg
+img/test.jpg
+img/map_raw.png

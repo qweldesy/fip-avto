@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ФиП Авто — автосервис в Сургуте · ремонт и обслуживание автомобилей</title>
+<meta name="description" content="Автосервис «ФиП Авто» в Сургуте: ремонт двигателя, ходовой, тормозов, рулевых реек, замена ГРМ, компьютерная диагностика. Прайс на сайте, запись по телефону +7 932 420-05-85. Ежедневно 9:00–21:00.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ФиП Авто">
+<meta property="og:title" content="ФиП Авто — автосервис в Сургуте">
+<meta property="og:description" content="Ремонт и обслуживание автомобилей. Ул. Заячий Остров, 1Б. Ежедневно 9:00–21:00. Рейтинг 5,0 на Яндекс Картах.">
+<meta property="og:image" content="img/web/og.jpg">
+<meta property="og:url" content="https://qweldesy.github.io/fip-avto/">
+<link rel="stylesheet" href="css/style.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "ФиП Авто",
+  "url": "https://qweldesy.github.io/fip-avto/",
+  "telephone": "+7 932 420-05-85",
+  "image": "https://qweldesy.github.io/fip-avto/img/web/og.jpg",
+  "priceRange": "от 400 ₽",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Заячий Остров, 1Б",
+    "addressLocality": "Сургут",
+    "addressRegion": "Ханты-Мансийский автономный округ — Югра",
+    "postalCode": "628401",
+    "addressCountry": "RU"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 61.251412, "longitude": 73.347291 },
+  "openingHours": "Mo-Su 09:00-21:00",
+  "sameAs": ["https://vk.ru/fipavto"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "110", "ratingCount": "156" }
+}
+</script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container header-in">
+    <a class="brand" href="#top" aria-label="ФиП Авто — на главную">
+      <span class="brand-mark" aria-hidden="true">ФА</span>
+      <span class="brand-name">ФиП&nbsp;<b>АВТО</b><small>автосервис · Сургут</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#price">Прайс</a>
+      <a href="#about">О сервисе</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="phone" href="tel:+79324200585" data-phone="+7 932 420-05-85">+7 932 420-05-85</a>
+      <a class="wa-btn" href="https://wa.me/79324200585" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.5-1 .1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6a11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
+      </a>
+      <a class="cta-btn" href="https://wa.me/79324200585?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82." target="_blank" rel="noopener">Записаться</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-panel">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu panel -->
+<div class="m-panel" id="mobile-panel" hidden>
+  <nav class="m-nav" aria-label="Мобильная навигация">
+    <a href="#services">Услуги</a>
+    <a href="#price">Прайс</a>
+    <a href="#about">О сервисе</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <div class="m-contact">
+    <a class="m-phone" href="tel:+79324200585" data-phone="+7 932 420-05-85">+7 932 420-05-85</a>
+    <a class="m-wa" href="https://wa.me/79324200585" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="m-cta" href="https://wa.me/79324200585?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82." target="_blank" rel="noopener">Записаться на ремонт</a>
+    <p class="m-note">ул. Заячий Остров, 1Б · ежедневно 9:00–21:00</p>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="badge"><span class="badge-dot"></span> Сургут · ежедневно 9:00–21:00</p>
+        <h1>Ремонт и&nbsp;обслуживание авто<span class="accent"> без сюрпризов</span></h1>
+        <p class="hero-sub">Ремонтируем двигатель, ходовую, тормоза и рулевые рейки. Запчасти под заказ и магазин при сервисе. Сначала диагностика и честная смета — потом работа.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/79324200585?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82." target="_blank" rel="noopener">Записаться на ремонт</a>
+          <a class="btn btn-ghost" href="#price">Смотреть прайс</a>
+        </div>
+        <ul class="hero-stats" aria-label="Ключевые цифры">
+          <li><b class="num" data-count="5" data-decimal="1">5,0</b><span>рейтинг на&nbsp;Яндекс&nbsp;Картах</span></li>
+          <li><b class="num" data-count="156">156</b><span>оценок клиентов</span></li>
+          <li><b class="num" data-count="70">70</b><span>позиций в&nbsp;прайсе</span></li>
+        </ul>
+      </div>
+      <div class="hero-photo" data-reveal>
+        <figure class="hero-frame">
+          <img src="img/web/hero.jpg" alt="Автомобиль на подъёмнике в зоне ремонта автосервиса ФиП Авто" width="960" height="1200" fetchpriority="high">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Парковка</span><i>◆</i><span>Оплата картой</span><i>◆</i><span>Предварительная запись</span><i>◆</i><span>Официальный автосервис</span><i>◆</i><span>Запчасти под заказ</span><i>◆</i><span>Сварочные работы</span><i>◆</i><span>Выездная диагностика</span><i>◆</i><span>Гарантия</span><i>◆</i><span>Магазин автозапчастей</span><i>◆</i>
+      <span>Парковка</span><i>◆</i><span>Оплата картой</span><i>◆</i><span>Предварительная запись</span><i>◆</i><span>Официальный автосервис</span><i>◆</i><span>Запчасти под заказ</span><i>◆</i><span>Сварочные работы</span><i>◆</i><span>Выездная диагностика</span><i>◆</i><span>Гарантия</span><i>◆</i><span>Магазин автозапчастей</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <p class="kicker">Виды работ</p>
+        <h2>Что мы делаем<span class="accent">.</span></h2>
+        <p class="sec-sub">20 направлений работ по автомобилю — от замены масла до капитальных узлов. Работаем с китайскими, корейскими, японскими и европейскими марками, легковыми и импортными.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo5.jpg" alt="Комплект запчастей ходовой части" loading="lazy" width="768" height="1024">
+          <span class="work-name">Ремонт ходовой части</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo2.jpg" alt="Ремонт рулевой рейки" loading="lazy" width="1000" height="1000">
+          <span class="work-name">Ремонт рулевых реек</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo6.jpg" alt="Замена ремня ГРМ" loading="lazy" width="768" height="1024">
+          <span class="work-name">Замена ГРМ</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo4.jpg" alt="Ремонт двигателя" loading="lazy" width="1024" height="768">
+          <span class="work-name">Ремонт двигателя и ГБЦ</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo9.jpg" alt="Ремонт тормозной системы" loading="lazy" width="1024" height="690">
+          <span class="work-name">Ремонт тормозной системы</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+        <a class="work-card glow-card" href="#price" data-reveal>
+          <img src="img/web/photo8.jpg" alt="Ремонт сцепления" loading="lazy" width="1024" height="625">
+          <span class="work-name">Ремонт сцепления и КПП</span>
+          <span class="work-link">Цены в прайсе <svg viewBox="0 0 16 16" width="14" height="14"><path fill="currentColor" d="M6 3.5 10.5 8 6 12.5l1 1L12.5 8 7 2.5z"/></svg></span>
+        </a>
+      </div>
+
+      <div class="chips" data-reveal>
+        <span>Ремонт выхлопной системы</span>
+        <span>Полное сервисное обслуживание</span>
+        <span>Замена масла</span>
+        <span>Ремонт стартеров</span>
+        <span>Компьютерная диагностика автомобиля</span>
+        <span>Промывка инжектора</span>
+        <span>Ремонт генераторов</span>
+        <span>Ремонт карданных валов</span>
+        <span>Ремонт топливной системы</span>
+        <span>Ремонт авторадиаторов</span>
+        <span>Ремонт гидроусилителя руля</span>
+        <span>Запчасти и комплектующие под заказ</span>
+        <span>Сварочные работы</span>
+        <span>Ремонт прицепов</span>
+        <span>Выездная диагностика автомобиля</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICE ============ -->
+  <section class="section section-alt" id="price">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <p class="kicker">Товары и услуги</p>
+        <h2>Прайс<span class="accent">.</span></h2>
+        <p class="sec-sub">Цены на работы от сервиса. Указано «от» — итог зависит от автомобиля. Обновлено 28 октября, источник: представитель организации.</p>
+      </div>
+
+      <div class="price-tools" data-reveal>
+        <label class="search" for="price-search">
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="m13.5 13.5 4 4M9 15a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z"/></svg>
+          <input id="price-search" type="search" placeholder="Найти работу — например «колодки»" autocomplete="off">
+        </label>
+        <button class="btn btn-ghost btn-sm" id="price-toggle" type="button" aria-expanded="false">Показать все 70</button>
+      </div>
+
+      <div class="price-card" data-reveal>
+        <div class="price-table" role="table" aria-label="Прайс на работы">
+          <div class="price-row price-head" role="row">
+            <span role="columnheader">Работа</span>
+            <span role="columnheader">Цена</span>
+          </div>
+          <div class="price-row" role="row"><span role="cell">Наконечник рулевой замена</span><b role="cell">от 400 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Шаровая опора (на болтах)</span><b role="cell">от 750 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Тяга рулевая замена</span><b role="cell">от 750 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Шланг тормозной замена</span><b role="cell">от 800 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Жидкость ГУР замена</span><b role="cell">от 800 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Промывка системы ГУР</span><b role="cell">от 800 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Пыльник рулевой тяги замена</span><b role="cell">от 800 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Колодки тормозные передние/задние (дисковые тормоза) замена</span><b role="cell">от 500 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Стойка стабилизатора задняя замена</span><b role="cell">от 500 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Стойка стабилизатора передняя замена</span><b role="cell">от 500 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Тяга рулевая + наконечник замена (одна сторона)</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Диагностика двигателя и электронных систем а/м</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Прокачка тормозов</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Замер компрессии + замена свечей (бензин без с/у коллектора)</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Втулка стабилизатора заднего замена 2 шт</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Амортизатор задний замена</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row"><span role="cell">Пружина задняя замена</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Втулки стабилизатора замена 2 шт</span><b role="cell">от 1000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">ШРУС внутренний замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">ШРУС наружный замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Пыльник шруса внутренний замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Пыльник шруса наружный замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сальник привода замена</span><b role="cell">от 1550 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Привод передний с/у</span><b role="cell">от 1250 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">МКПП с/у (сцепление замена)</span><b role="cell">от 6000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Глушитель приёмная труба с/у (сварочные работы от 800 р.)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Трос ручного тормоза задний замена (1 колесо, барабанные тормоза, при снятых барабанах)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Трос ручного тормоза задний замена (1 колесо, дисковые тормоза)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Суппорт тормозной передний/задний с/у (переборка, замена направляющих, поршня)</span><b role="cell">от 1400 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Колодки тормозные задние замена (барабанные тормоза)</span><b role="cell">от 2000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Диски тормозные передние/задние + колодки замена</span><b role="cell">от 1750 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Генератор с/у</span><b role="cell">от 2250 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Стартер с/у</span><b role="cell">от 1950 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Прокладка клапанной крышки замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сальник коленчатого вала передний замена</span><b role="cell">от 3500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сальник коленчатого вала задний замена МКПП/АКПП</span><b role="cell">от 7500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Поддон картера двигателя замена</span><b role="cell">от 2000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Шкив вала коленчатого замена</span><b role="cell">от 1200 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Опора двигателя левая замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Опора двигателя задняя замена (КПП)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Опора двигателя правая замена (гидравлическая)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Радиатор печки замена</span><b role="cell">от 3500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Радиатор охлаждения двигателя замена</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Термостат замена</span><b role="cell">от 1200 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Помпа системы охлаждения двигателя замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Насос топливный погружной замена</span><b role="cell">от 2000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Топливный бак с/у</span><b role="cell">от 2000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Подвеска задняя переборка</span><b role="cell">от 6000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рычаг продольный задней подвески замена</span><b role="cell">от 2500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сайлентблок рычага продольного задней подвески замена</span><b role="cell">от 2500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рычаг поперечный развальный задней подвески замена</span><b role="cell">от 1250 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рычаг поперечный верхний задней подвески замена</span><b role="cell">от 1250 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рычаг поперечный нижний задней подвески замена</span><b role="cell">от 1250 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Подрамник задний с/у</span><b role="cell">от 4000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Подрамник передний с/у</span><b role="cell">от 3000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Подшипник ступицы / ступица переднего колеса замена</span><b role="cell">от 2000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Стабилизатор замена</span><b role="cell">от 2500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Опора стойки амортизатора замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Пружина передняя замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Стойка амортизатора передняя замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Опора стойки амортизатора задней замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Стойка амортизатора задняя замена</span><b role="cell">от 1800 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сайлентблоки рычага передней подвески задний + передний замена</span><b role="cell">от 2200 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Сайлентблок рычага передней подвески задний замена</span><b role="cell">от 1700 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рычаг передней подвески</span><b role="cell">от 1200 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Шаровая опора (на заклёпках)</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Насос ГУР с/у</span><b role="cell">от 1500 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Кардан рулевого вала с/у, замена крестовин</span><b role="cell">от 1600 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Ремонт рулевой рейки</span><b role="cell">от 10000 ₽</b></div>
+          <div class="price-row" role="row" data-more><span role="cell">Рейка рулевая с/у</span><b role="cell">от 4500 ₽</b></div>
+        </div>
+        <p class="price-empty" hidden>Ничего не нашли — напишите нам в WhatsApp, подскажем цену.</p>
+      </div>
+
+      <p class="price-note" data-reveal>Цены «от», без стоимости запчастей. Точную смету дадим после диагностики — напишите в WhatsApp или позвоните: <a href="tel:+79324200585" data-phone="+7 932 420-05-85">+7 932 420-05-85</a></p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <p class="kicker">О сервисе</p>
+        <h2>Сервис и магазин запчастей<span class="accent"> — под одной крышей</span></h2>
+        <p class="sec-sub">«ФиП Авто» — официальный автосервис и магазин автозапчастей и автотоваров в Сургуте. Запчасти под заказ, самовывоз, предварительная запись.</p>
+      </div>
+
+      <div class="about-grid">
+        <figure class="about-photo" data-reveal>
+          <img src="img/web/photo3.jpg" alt="Вход в автосервис ФиП Авто с вывеской" loading="lazy" width="534" height="1024">
+        </figure>
+        <div class="about-cards">
+          <article class="feature-card glow-card" data-reveal>
+            <span class="feature-num">01</span>
+            <h3>Честная диагностика</h3>
+            <p>Компьютерная диагностика автомобиля и выездная диагностика. Сначала находим причину — показываем и объясняем, потом начинаем ремонт.</p>
+          </article>
+          <article class="feature-card glow-card" data-reveal>
+            <span class="feature-num">02</span>
+            <h3>Запчасти под заказ</h3>
+            <p>Магазин автозапчастей и автотоваров при сервисе: детали для иномарок и легковых автомобилей. Комплектующие под заказ, самовывоз.</p>
+          </article>
+          <article class="feature-card glow-card" data-reveal>
+            <span class="feature-num">03</span>
+            <h3>Гарантия на работы</h3>
+            <p>Официальный автосервис: базовое сервисное обслуживание и полный цикл работ по узлам. Работаем с гарантией.</p>
+          </article>
+          <article class="feature-card glow-card" data-reveal>
+            <span class="feature-num">04</span>
+            <h3>Удобно добраться</h3>
+            <p>Парковка у сервиса. Рядом остановки: «СТО», «ТЦ Купец», «Набережный проспект», «Парковая», «Многофункциональный центр».</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="pay-row" data-reveal>
+        <p class="pay-title">Способы оплаты</p>
+        <div class="chips chips-sm">
+          <span>Наличными</span><span>Оплата картой</span><span>Безналичная</span><span>Онлайн</span><span>QR-код</span><span>Скидки льготным категориям</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="rev-head" data-reveal>
+        <div>
+          <p class="kicker">Отзывы с Яндекс Карт</p>
+          <h2>Рейтинг 5,0<span class="accent"> ★</span></h2>
+        </div>
+        <div class="rev-meta">
+          <div class="rev-stars" aria-hidden="true">★★★★★</div>
+          <p><b>156</b> оценок · <b>110</b> отзывов</p>
+        </div>
+      </div>
+
+      <div class="aspects" data-reveal>
+        <span>Персонал <b>99%</b> <i>82 отзыва</i></span>
+        <span>Ремонт <b>99%</b> <i>67 отзывов</i></span>
+        <span>Время ожидания <b>98%</b> <i>47 отзывов</i></span>
+        <span>Диагностика <b>100%</b> <i>30 отзывов</i></span>
+        <span>Запчасти <b>100%</b> <i>20 отзывов</i></span>
+        <span>Ремонт ходовой <b>100%</b> <i>11 отзывов</i></span>
+      </div>
+
+      <div class="rev-grid">
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">АА</span><div><b>Анастасия Ауст</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Отличный автосервис! Ребята знают своё дело. Первый раз обратилась к ним, за помощью исправить работу горе мастера. Все исправили, объяснили, показали. Отношение хорошее к клиентам. После обращалась не раз к ним по другим вопросам, все быстро и качественно. Хорошая клиентская зона, уютно, чисто. Клиентоориентированность на высшем уровне, не выдумывают несуществующих проблем, объясняют, советуют. Советую данный автосервис. Ребятам огромное спасибо.</p>
+        </article>
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">VS</span><div><b>Vladimir S.</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Отличный автосервис. Мастер Замир все четко сделал. Приехал в Сургут по работе, в пятницу вечером зашумели задние колодки, позвонил в ФиП Авто, сказали приезжай. Запчастей с собой не было, Замир свозил до магазина, купили запчасти. В течение 30 минут все установил как положено. Автомобиль Тигуан 2012 год. 1,4 TSI. Рекомендую этот автосервис.</p>
+        </article>
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">ИВ</span><div><b>Игорь Волков</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Обслуживаюсь у ребят с 2019 года. Лучшие в своем деле, всегда дадут грамотную диагностику, закажут оригинальные запчасти, честно отремонтируют ваше авто. Всем рекомендую! 🤝</p>
+        </article>
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">АП</span><div><b>Александр Петров</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Отличный сервис. У меня была проблема со стуком в подвеске, и ни в одном другом сервисе не смогли её выявить. Здесь специалисты быстро нашли причину. Работы выполнили качественно и в срок. Также порадовало, что запчасти оказались дешевле, чем в других центрах, и не пришлось самому их искать — всё привезли. Комфортная зона ожидания с видеонаблюдаемой парковкой — тоже плюс. Однозначно рекомендую всем, кто ищет надёжный сервис.</p>
+        </article>
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">ЕЛ</span><div><b>Елена</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Огромное вам, ребята, спасибо — никто не мог прокачать тормоза, а вы смогли! Ребята знают своё дело на миллион процентов! Всем знакомым рекомендовала! Спасибо большое вам 🙏 Тормоза работают отлично 👌 Страха больше нет за машину 🚗</p>
+        </article>
+        <article class="rev-card" data-reveal>
+          <div class="rev-top"><span class="rev-ava" aria-hidden="true">ЖР</span><div><b>Жанна Рогова</b><span class="rev-stars-sm">★★★★★</span></div></div>
+          <p>Я начинающий водитель и ничего ещё совсем не знаю об автомобилях, но недавно меня забеспокоил какой-то посторонний звук — пришлось обратиться в ФиП Авто (просто проезжая мимо). К моему глубокому удивлению супер-мастера сервиса быстро нашли причину в подвеске, заменили всё быстренько и плюсом масло бесплатно мне заменили. Ребята-мастера меня порадовали, денег много не взяли, ещё плюс скидки предложили. Вообще лично я буду, если что, обращаться только к ним. Процветания вам, ребята.</p>
+        </article>
+      </div>
+
+      <div class="rev-cta" data-reveal>
+        <a class="btn btn-ghost" href="https://yandex.ru/maps/org/fip_avto/194668658332/reviews/" target="_blank" rel="noopener">Все 110 отзывов на Яндекс Картах</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS ============ -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="sec-head" data-reveal>
+        <p class="kicker">Контакты</p>
+        <h2>Как нас найти<span class="accent">.</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <div class="contact-item">
+            <p class="ci-label">Адрес</p>
+            <p class="ci-value">Сургут, ул. Заячий Остров, 1Б</p>
+            <p class="ci-note">ХМАО — Югра, 628401</p>
+          </div>
+          <div class="contact-item">
+            <p class="ci-label">Телефон / WhatsApp</p>
+            <p class="ci-value"><a href="tel:+79324200585" data-phone="+7 932 420-05-85">+7 932 420-05-85</a></p>
+            <p class="ci-note"><a href="https://wa.me/79324200585" target="_blank" rel="noopener">Написать в WhatsApp</a> · <a href="https://vk.ru/fipavto" target="_blank" rel="noopener">Мы во ВКонтакте</a></p>
+          </div>
+          <div class="contact-item">
+            <p class="ci-label">Магазин запчастей</p>
+            <p class="ci-value"><a href="tel:+73462600585">+7 (3462) 60-05-85</a></p>
+          </div>
+          <div class="contact-item">
+            <p class="ci-label">Режим работы</p>
+            <p class="ci-value">Ежедневно 9:00–21:00</p>
+            <p class="ci-note">Без выходных</p>
+          </div>
+          <div class="contact-cta">
+            <a class="btn btn-primary" href="https://wa.me/79324200585?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82." target="_blank" rel="noopener">Записаться на ремонт</a>
+            <a class="btn btn-ghost" href="https://yandex.ru/maps/org/fip_avto/194668658332/" target="_blank" rel="noopener">Карточка на Яндекс Картах</a>
+          </div>
+        </div>
+        <figure class="map-card" data-reveal>
+          <img src="img/map.png" alt="Карта: автосервис ФиП Авто, Сургут, ул. Заячий Остров, 1Б, у Югорского тракта" loading="lazy" width="1638" height="736">
+          <a class="map-link" href="https://yandex.ru/maps/org/fip_avto/194668658332/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M4 2h6v2H5.4l6.6 6.6-1.4 1.4L4 5.4V12H2V2h2Z" transform="rotate(45 8 8)"/></svg>
+            Открыть в Яндекс Картах
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="container" data-reveal>
+      <h2>Запишитесь сегодня —<br><span class="accent">завтра уже на ходу</span></h2>
+      <p>Ежедневно с 9:00 до 21:00. Позвоните или напишите — согласуем время под вас.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+79324200585" data-phone="+7 932 420-05-85">Позвонить</a>
+        <a class="btn btn-ghost" href="https://wa.me/79324200585" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">ФА</span><span class="brand-name">ФиП&nbsp;<b>АВТО</b><small>автосервис · Сургут</small></span></a>
+      <p>Автосервис и магазин автозапчастей. Ремонт автомобилей, гарантия, честная диагностика.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <p class="f-title">Разделы</p>
+      <a href="#services">Услуги</a>
+      <a href="#price">Прайс</a>
+      <a href="#about">О сервисе</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer-contacts">
+      <p class="f-title">Контакты</p>
+      <a href="tel:+79324200585" data-phone="+7 932 420-05-85">+7 932 420-05-85</a>
+      <a href="tel:+73462600585">+7 (3462) 60-05-85</a>
+      <a href="https://wa.me/79324200585" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://vk.ru/fipavto" target="_blank" rel="noopener">vk.ru/fipavto</a>
+    </div>
+    <div class="footer-addr">
+      <p class="f-title">Адрес</p>
+      <p>ул. Заячий Остров, 1Б,<br>Сургут, ХМАО — Югра, 628401</p>
+      <p>Ежедневно 9:00–21:00</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 ФиП Авто, Сургут</p>
+    <p><a href="https://yandex.ru/maps/org/fip_avto/194668658332/" target="_blank" rel="noopener">Данные: карточка организации на Яндекс Картах</a></p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/79324200585" target="_blank" rel="noopener" aria-label="Чат в WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.5 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.5-1 .1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6a11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
+</a>
+
+<script src="js/motion.min.js" defer></script>
+<script src="js/main.js?v=2" defer></script>
+</body>
+</html>

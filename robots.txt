@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qweldesy.github.io/fip-avto/sitemap.xml
