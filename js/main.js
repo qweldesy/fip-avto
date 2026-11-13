@@ -177,16 +177,23 @@
           M.animate(0, target, {
             duration: 1.1,
             ease: [0.16, 1, 0.3, 1],
-            onUpdate: function (v) { el.textContent = fmt.format(parseFloat(v.toFixed(decimals))); }
+            onUpdate: function (v) {
+              el.textContent = decimals
+                ? parseFloat(v).toFixed(decimals).replace('.', ',')
+                : fmt.format(Math.round(parseFloat(v)));
+            }
           });
         } catch (err) {
-          el.textContent = fmt.format(target);
+          el.textContent = decimals
+            ? target.toFixed(decimals).replace('.', ',')
+            : fmt.format(target);
         }
       }, { amount: 0.6 });
     });
 
-    /* страховка: если rAF/IO заморожены (троттлинг вкладки), показываем то,
-       что уже в вьюпорте, — контент не должен остаться невидимым */
+    /* страховка: если IO не успел за скроллом (прямая загрузка с хэшем) или
+       rAF заморожен (троттлинг вкладки) — показываем то, что уже в вьюпорте,
+       чтобы контент не остался невидимым */
     setTimeout(function () {
       document.querySelectorAll('[data-reveal]').forEach(function (el) {
         var r = el.getBoundingClientRect();
@@ -205,7 +212,7 @@
           }, 700);
         }
       });
-    }, 2000);
+    }, 600);
   }
 
   /* ---------- glow-карточки (spotlight за курсором) ---------- */
