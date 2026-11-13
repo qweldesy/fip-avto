@@ -164,7 +164,8 @@
         var i = siblings.indexOf(el);
         if (i > 0) delay = Math.min(i * 70, 350);
       }
-      M.animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.7, delay: delay, ease: [0.22, 1, 0.36, 1] });
+      var ctrl = M.animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.7, delay: delay, ease: [0.22, 1, 0.36, 1] });
+      if (ctrl && ctrl.stop) el._mvCtrl = ctrl;
     }, { margin: '0px 0px -70px 0px' });
 
     /* счётчики в хиро */
@@ -193,19 +194,20 @@
 
     /* страховка: если IO не успел за скроллом (прямая загрузка с хэшем) или
        rAF заморожен (троттлинг вкладки) — показываем то, что уже в вьюпорте,
-       чтобы контент не остался невидимым */
+       чтобы контент не остался невидимым. Останавливаем зависшую анимацию,
+       чтобы она не перезаписала стили при пробуждении рендера */
     setTimeout(function () {
       document.querySelectorAll('[data-reveal]').forEach(function (el) {
         var r = el.getBoundingClientRect();
         if (r.top < window.innerHeight && r.bottom > 0 && parseFloat(getComputedStyle(el).opacity) < 0.05) {
+          try { if (el._mvCtrl && el._mvCtrl.stop) el._mvCtrl.stop(); } catch (err) {}
           try {
-            M.animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.5 });
-          } catch (err) {
-            el.style.opacity = '1';
-            el.style.transform = 'none';
-          }
+            var c2 = M.animate(el, { opacity: [0, 1], y: [26, 0] }, { duration: 0.5 });
+            if (c2 && c2.stop) el._mvCtrl = c2;
+          } catch (err) {}
           setTimeout(function () {
             if (parseFloat(getComputedStyle(el).opacity) < 0.05) {
+              try { if (el._mvCtrl && el._mvCtrl.stop) el._mvCtrl.stop(); } catch (err) {}
               el.style.opacity = '1';
               el.style.transform = 'none';
             }
